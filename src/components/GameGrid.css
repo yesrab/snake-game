@@ -1,0 +1,39 @@
+.game-grid {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid yellow;
+  max-width: 90vw;
+}
+
+.grid-row {
+  display: flex;
+  justify-content: space-between;
+  border-collapse: collapse;
+  max-width: 90vw;
+}
+
+.grid-cell {
+  flex-grow: 1;
+  height: 50px;
+  width: 50px;
+  /* aspect-ratio: 1/1; */
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+.grid-cell.player {
+  background-color: green;
+}
+
+.grid-cell.snake {
+  background-color: red;
+}
+
+.grid-cell.diamond {
+  background-color: blue;
+}
+
+.gameContainer {
+  max-width: 100vw;
+  padding: 1%;
+}
